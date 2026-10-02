@@ -1,6 +1,6 @@
-# feature-flag-service
+# srv-calibration-registry
 
-把功能开关的定义、目标环境、灰度比例、生效时间窗口和变更历史记录成可查询的服务，支持按环境和标记评估开关状态并追溯配置变更。
+把传感器内外参、时间偏移、标定版本号、参数摘要、审批状态与适用设备记录成可查询的服务，支持按设备读取生效版本，并追溯每一次应用与回退。
 
 ## 运行要求
 
@@ -20,7 +20,7 @@ go run .
 | 变量 | 默认值 | 用途 |
 |---|---|---|
 | `ADDR` | `127.0.0.1:8080` | HTTP 监听地址 |
-| `DB_PATH` | `feature-flag-service.db` | SQLite 数据库文件路径 |
+| `DB_PATH` | `srv-calibration-registry.db` | SQLite 数据库文件路径 |
 
 ## 已公开的入口
 
